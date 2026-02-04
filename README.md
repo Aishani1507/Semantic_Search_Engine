@@ -82,37 +82,38 @@ qrels_filtered.csv
 
 The system is accessed via a command-line interface.
 
-Embedding only Retrieval
+- Embedding only Retrieval
 python implementation.py --query "machine learning"
 
-Hybrid Retrieval(BM25 + Retrieval)
+- Hybrid Retrieval(BM25 + Retrieval)
 python implementation.py --query "machine learning" --mode hybrid
 
 ##Evaluation
 
 Run the evaluation script to compute retrieval quality and efficiency metrics:
+
 python evaluate.py
 
 Retrieval Metrics
-Mean Reciprocal Rank (MRR)
-Recall@10
-NDCG@10
+- Mean Reciprocal Rank (MRR)
+- Recall@10
+- NDCG@10
 
 Metrics are reported for:
-Embedding-only retrieval
-Hybrid retrieval (RRF)
-Efficiency Metrics
+- Embedding-only retrieval
+- Hybrid retrieval (RRF)
+- Efficiency Metrics
 
 Query latency percentiles:
-p50 (median)
-p95
-p99
+- p50 (median)
+- p95
+- p99
 
 ##Summary
 This project implements a complete semantic search system with:
-Dense and hybrid retrieval
-Standard IR evaluation metrics
-Latency and scalability analysis
-Clean, modular, and reproducible design
+- Dense and hybrid retrieval
+- Standard IR evaluation metrics
+- Latency and scalability analysis
+- Clean, modular, and reproducible design
 
 
