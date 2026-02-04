@@ -52,7 +52,7 @@ Required files:
 2. Place them in a local directory (e.g. `dataset_IEEE/`)
 3. Update the dataset path in `dataset_loader.py`:
 
-
+```python
 BASE_PATH = Path("/path/to/your/msmarco/dataset")
 
 To create a virtual environment
