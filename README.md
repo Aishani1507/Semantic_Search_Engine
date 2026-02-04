@@ -30,7 +30,7 @@ An additional **hybrid retrieval system** combining dense embeddings with **BM25
 │
 ├── requirements.txt
 ├── README.md
-├── .gitignore
+
 
 ## Dataset
 
