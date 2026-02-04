@@ -61,7 +61,7 @@ source venv/bin/activate     # Windows: venv\Scripts\activate
 ###Install dependencies
 pip install -r requirements.txt
 
-### Data Preparation
+## Data Preparation
 Run the script to
 1. preprocess data
 2. Align queries and relevance judgments
@@ -76,7 +76,7 @@ val_queries.csv
 test_queries.csv
 qrels_filtered.csv
 
-###Running the Search Engine
+##Running the Search Engine
 
 The system is accessed via a command-line interface.
 
@@ -86,7 +86,7 @@ python implementation.py --query "machine learning"
 Hybrid Retrieval(BM25 + Retrieval)
 python implementation.py --query "machine learning" --mode hybrid
 
-###Evaluation
+##Evaluation
 Run the evaluation script to compute retrieval quality and efficiency metrics:
 python evaluate.py
 
@@ -105,7 +105,7 @@ p50 (median)
 p95
 p99
 
-Summary
+##Summary
 This project implements a complete semantic search system with:
 Dense and hybrid retrieval
 Standard IR evaluation metrics
