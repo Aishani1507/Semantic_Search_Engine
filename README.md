@@ -134,7 +134,7 @@ Query latency percentiles:
 - p50 (median): typical query latency
 - p95/ p99 : worst-case latency
 
-###Observations:
+### Observations:
 - Emedding-only retrieval is significantly faster due to FAISS ANN search.
 - Hybrid retrieval incurs higher latency because BM25 scoring is performed over the full document corpus.
 - FAISS HNSW indexing provides a good trade-off between retrieval accuracy and speed.
