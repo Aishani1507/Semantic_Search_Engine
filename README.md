@@ -47,6 +47,7 @@ Required files:
 - `qrels.dev.tsv`
 
 - ### Dataset setup
+  
 1. Download the dataset files
 2. Place them in a local directory (e.g. `dataset_IEEE/`)
 3. Update the dataset path in `dataset_loader.py`:
@@ -62,6 +63,7 @@ source venv/bin/activate     # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 ## Data Preparation
+
 Run the script to
 1. preprocess data
 2. Align queries and relevance judgments
@@ -87,6 +89,7 @@ Hybrid Retrieval(BM25 + Retrieval)
 python implementation.py --query "machine learning" --mode hybrid
 
 ##Evaluation
+
 Run the evaluation script to compute retrieval quality and efficiency metrics:
 python evaluate.py
 
