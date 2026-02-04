@@ -46,7 +46,7 @@ Required files:
 - `queries.dev.tsv`
 - `qrels.dev.tsv`
 
-- ### Dataset setup
+### Dataset setup
   
 1. Download the dataset files
 2. Place them in a local directory (e.g. `dataset_IEEE/`)
@@ -59,7 +59,7 @@ To create a virtual environment
 python -m venv venv
 source venv/bin/activate     # Windows: venv\Scripts\activate
 
-###Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
 ## Data Preparation
@@ -72,13 +72,13 @@ Run the script to
 python data_prep.py
 
 This will generate:
-passages_sampled.csv
-train_queries.csv
-val_queries.csv
-test_queries.csv
-qrels_filtered.csv
+- passages_sampled.csv
+- train_queries.csv
+- val_queries.csv
+- test_queries.csv
+- qrels_filtered.csv
 
-##Running the Search Engine
+## Running the Search Engine
 
 The system is accessed via a command-line interface.
 
@@ -88,7 +88,7 @@ python implementation.py --query "machine learning"
 - Hybrid Retrieval(BM25 + Retrieval)
 python implementation.py --query "machine learning" --mode hybrid
 
-##Evaluation
+## Evaluation
 
 Run the evaluation script to compute retrieval quality and efficiency metrics:
 
@@ -109,7 +109,7 @@ Query latency percentiles:
 - p95
 - p99
 
-##Summary
+## Summary
 This project implements a complete semantic search system with:
 - Dense and hybrid retrieval
 - Standard IR evaluation metrics
